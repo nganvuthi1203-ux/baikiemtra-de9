@@ -1,0 +1,205 @@
+ /* --- RESET & BASIC STYLES --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Container chính của Website */
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+
+        /* --- HEADER --- */
+        header {
+            background-color: #bcd2ee; /* Màu xanh nhạt theo thiết kế */
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        header img {
+            height: 70px;
+            display: block;
+            margin: 0 auto 5px auto;
+        }
+
+        header .header-title {
+            font-weight: bold;
+            font-size: 14px;
+            color: #d11124;
+            letter-spacing: 1px;
+        }
+
+        /* --- NAVIGATION MENU (2 điểm) --- */
+        nav {
+            background-color: #172746; /* Màu xanh đen mảng menu */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 12px 18px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        /* Hiệu ứng Hover trên Menu */
+        nav ul li a:hover {
+            background-color: #2c426d;
+            color: #ffd700;
+        }
+
+        /* --- BANNER --- */
+        .banner-container img {
+            width: 100%;
+            display: block;
+        }
+
+        /* --- SEARCH FORM & VALIDATE (2 điểm) --- */
+        .search-bar-container {
+            background-color: #172746;
+            padding: 10px 15px;
+        }
+
+        .search-form {
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 8px 12px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            outline: none;
+            border-radius: 2px;
+        }
+
+        .search-btn {
+            background-color: #e65100; /* Màu cam nút tìm kiếm */
+            color: #fff;
+            border: none;
+            padding: 8px 25px;
+            font-weight: bold;
+            font-size: 13px;
+            cursor: pointer;
+            border-radius: 2px;
+            transition: background 0.3s ease;
+        }
+
+        .search-btn:hover {
+            background-color: #bf360c;
+        }
+
+        /* --- MAIN CONTENT (3 điểm) --- */
+        main {
+            padding: 15px;
+        }
+
+        /* Khối 2 tin tức phía trên */
+        .top-news-grid {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .news-card {
+            flex: 1;
+            border: 1px solid #e5a075; /* Viền màu cam nhạt theo mẫu */
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        /* Tiêu đề tin tức */
+        .news-title {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            color: #172746;
+            text-decoration: none;
+            margin-bottom: 15px;
+            line-height: 1.3;
+            transition: text-shadow 0.2s ease, color 0.2s ease;
+        }
+
+        /* HIỆU ỨNG ĐỔ BÓNG DÀNH CHO TIÊU ĐỀ TIN TỨC (1 điểm) */
+        .news-title:hover {
+            text-shadow: 2px 2px 4px #000; /* Đổ bóng màu đen #000 */
+            color: #0d47a1;
+        }
+
+        .news-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Khối tin tức rộng phía dưới */
+        .bottom-news-card {
+            border: 1px solid #e5a075;
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .bottom-news-card .news-title {
+            color: #bd5712; /* Màu nâu cam đặc trưng của tiêu đề tin dưới */
+        }
+
+        .bottom-news-card .news-title:hover {
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .news-detail-flex {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .news-detail-flex img {
+            width: 45%;
+            height: auto;
+            display: block;
+        }
+
+        .news-detail-flex p {
+            width: 55%;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+            text-align: justify;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #bcd2ee;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 13px;
+            color: #172746;
+            letter-spacing: 0.5px;
+        }

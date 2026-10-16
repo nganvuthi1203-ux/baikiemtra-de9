@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề 9 </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <a href="#">
+                <img src="img/logo.png" alt="FIFA World Cup Russia 2018 Logo">
+            </a>
+        </header>
+
+        <!-- MN -->
+        <nav>
+            <ul>
+                <li><a href="#">WORLD CUP 2018</a></li>
+                <li><a href="#">LỊCH THI ĐẤU</a></li>
+                <li><a href="#">LIVE</a></li>
+                <li><a href="#">KẾT QUẢ</a></li>
+                <li><a href="#">BÌNH LUẬN</a></li>
+                <li><a href="#">ẢNH VÀ VIDEO</a></li>
+            </ul>
+        </nav>
+
+     
+        <div class="banner-container">
+            <a href="#">
+                <img src="img/banner.jpg" alt="UEFA Champions League Banner">
+            </a>
+        </div>
+
+
+        <div class="search-bar-container">
+            <form id="searchForm" class="search-form" action="#" method="GET" onsubmit="return validateSearchForm()">
+                <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm thông tin WorldCup 2018...">
+                <button type="submit" class="search-btn">TÌM KIẾM</button>
+            </form>
+        </div>
+
+
+        <main>
+           
+            <div class="top-news-grid">
+                <div class="news-card">
+                    <h2>
+                        <a href="#" class="news-title">Trận Nhật Bản - Colombia: Bắt nạt "võ sỹ Samurai" được không?</a>
+                    </h2>
+                    <a href="#">
+                        <img src="IMG/img1.jpg" alt="Trận Nhật Bản vs Colombia">
+                    </a>
+                </div>
+
+                <div class="news-card">
+                    <h2>
+                        <a href="#" class="news-title">Mất điểm oan, Brazil bức xúc đòi FIFA cho xem VAR</a>
+                    </h2>
+                    <a href="#">
+                        <img src="IMG/img2.jpg" alt="Brazil đòi FIFA cho xem VAR">
+                    </a>
+                </div>
+            </div>
+
+            <!-- TIN DƯỚI -->
+            <div class="bottom-news-card">
+                <h2>
+                    <a href="#" class="news-title">Kèo "thơm" Colombia vs Nhật Bản: Át vía châu Á ở vòng ngoài</a>
+                </h2>
+                <div class="news-detail-flex">
+                    <a href="#" style="width: 45%;">
+                        <img src="IMG/img3.jpg" alt="Colombia vs Nhật Bản">
+                    </a>
+                    <p>
+                        Trong quá khứ, Colombia luôn áp đảo khi đối đầu với Nhật Bản. Đã 3 lần hai đội gặp nhau, và đại diện Nam Mỹ có 2 chiến thắng, ghi 5 bàn.Trong lần gần nhất đối mặt, Colombia đã hạ gục Nhật Bản với tỷ số đậm, ở World Cup 2014.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+      
+        <footer>
+            TÊN SINH VIÊN: VŨ THỊ TUYẾT NGÂN - CNTT3K24
+        </footer>
+    </div>
+
+
+    <script>
+        function validateSearchForm() {
+            var searchInput = document.getElementById("searchInput").value.trim();
+            if (searchInput === "") {
+                alert("Vui lòng nhập từ khóa tìm kiếm!");
+                document.getElementById("searchInput").focus();
+                return false; // Ngăn không cho gửi form khi rỗng
+            }
+            alert("Đang tìm kiếm thông tin: " + searchInput);
+            return true;
+        }
+    </script>
+</body>
+</html>
